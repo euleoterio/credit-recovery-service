@@ -51,7 +51,20 @@ Em construção. Acompanhe a evolução pelos commits e pelos ADRs.
 
 ## Como rodar
 
-Instruções de execução serão adicionadas conforme o ambiente for montado.
+### Pré-requisitos
+- Java 21
+- Maven 3.9+
+- Docker + Docker Compose
+
+### 1. Subir a infraestrutura
+docker compose up -d
+
+### 2. Rodar a aplicação
+./mvnw spring-boot:run
+
+A aplicação sobe em http://localhost:8080
+
+Health check: http://localhost:8080/actuator/health
 
 ## Licença
 
